@@ -1,3 +1,4 @@
-function findMatching(drivers){
-  drivers.filter(findMatching(driver) {return driver === driver});
+function findMatching(drivers, name){
+  return drivers.filter(function(driver) {return driver.toLowerCase() === name.toLowerCase();
+  });
 }
