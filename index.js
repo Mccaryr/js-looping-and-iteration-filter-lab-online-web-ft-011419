@@ -3,6 +3,7 @@ function findMatching(drivers, name){
   });
 }
 
-function fuzzyMatch(){
-
+function fuzzyMatch(drivers, partOfName){
+return drivers.filter(function(driver) {return driver[0..2] === partOfName[0..2];
+});
 }
