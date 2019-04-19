@@ -8,3 +8,9 @@ function fuzzyMatch(drivers, partOfName){
 return drivers.filter(function(driver) {return driver.slice(0, lengthOfName) === partOfName;
 });
 }
+
+
+function matchName(drivers, driverString){
+  return drivers.filter(function(driverName) {return driverName === driverString;
+  });
+}
