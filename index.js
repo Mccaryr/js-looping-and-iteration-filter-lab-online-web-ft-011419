@@ -11,6 +11,6 @@ return drivers.filter(function(driver) {return driver.slice(0, lengthOfName) ===
 
 
 function matchName(drivers, driverString){
-  return drivers.filter(function(driverName) {return driverName === driverString;
+  return drivers.filter(function(driver) {return driver.name === driverString;
   });
 }
